@@ -38,6 +38,10 @@ export default function() {
 
   this.delete('/pets/:id', function() { }, 200);
 
+  this.get('/pets/dogs', function(schema, request) {
+    return schema['pet/dogs'].all();
+  });
+
   this.get('/word-smiths/:id');
 
 }
