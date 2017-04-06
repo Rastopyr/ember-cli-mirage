@@ -29,7 +29,6 @@ export default function(prefix) {
       return;
     }
     let moduleParts = moduleName.split('/');
-                 moduleParts[moduleParts.length - 3] === 'mirage');
     let [, , moduleType, ...moduleKeyParts] = moduleParts;
     let moduleKey = moduleKeyParts.join('/');
 
